@@ -13,4 +13,4 @@ RUN curl -sSf https://join.golem.network/as-requestor | bash - || echo "Nothing 
 ENV PATH=${PATH}:/root/.local/bin/:/root/.local/
 WORKDIR /golem/work
 
-#docker run --rm -it --net="host" -v ${PWD}/:/golem/work golem-codepen
+#docker run --rm -it -v ${PWD}/disks/ID:/golem/work golem-codepen /bin/bash -C ./start.sh
